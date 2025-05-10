@@ -110,6 +110,9 @@ padding: 15px 10px;
     justify-content: space-between;
     align-items: center;
 }
+.showcase-img {
+    /*background: url(http://127.0.0.1:5500/Images/showcase-model.png);*/
+}
 .card-img {
     padding: 10% 0;
 }
@@ -551,6 +554,17 @@ figure.Portfolioimg {
     .showcase p {
         font-size: 16px;
     }
+    .showcase {
+        min-height: 100vh; /* Make section full height */
+        display: flex;
+        align-items: center;
+    }
+    
+    .showcase-img img {
+        max-height: 100%; /* Ensure the image doesn't exceed section height */
+        object-fit: contain; /* Maintain aspect ratio without cropping */
+    }
+        
     .stats-Streak {
     display: block;
     }
